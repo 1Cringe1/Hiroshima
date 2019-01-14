@@ -1,0 +1,13 @@
+<HTML!>
+<img src="hiroshima.png">
+<script>
+window.setTimeout(a,1000)
+functio a() {
+document.body.innerHTML = "";
+}
+a()
+document.writeLine("Choose your character!")
+document.writeLine("1. 
+window.onmousemove = function (e) {
+if (!e) e = window.event;
+if (e.oneKey) {
