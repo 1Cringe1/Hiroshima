@@ -2,7 +2,7 @@
 <img src="hiroshima.png">
 <script>
 window.setTimeout(a,1000)
-functio a() {
+function a() {
 document.body.innerHTML = "";
 }
 a()
@@ -13,7 +13,7 @@ document.writeLine("3. ")
 window.onmousemove = function (e) {
 if (!e) e = window.event;
 if (e.oneKey) {
-document.write("You hear a siren that lasted a minute but you think it is only a slight degree of danger because a siren went off at that time every morning.")
+document.writeLine("You hear a siren that lasted a minute but you think it is only a slight degree of danger because a siren went off at that time every morning.")
 document.writeLine("Press enter to continue.")
 if (e.enterKey) {
 document.writeLine("You see a huge flash of light cut across the sky travling from east to west. You are 3500 yards away from where it was dropped. Your are in the middle of the street next to a garden and a house. What should you do?")
