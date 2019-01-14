@@ -7,18 +7,18 @@ document.body.innerHTML = "";
 }
 a()
 document.writeLine("Choose your character!")
-document.writeLine("1. ")
+document.writeLine("1. Mr. Tanimoto")
 document.writeLine("2. ")
 document.writeLine("3. ")
 window.onmousemove = function (e) {
 if (!e) e = window.event;
 if (e.oneKey) {
-document.write("backstory")
+document.write("You hear a siren that lasted a minute but you think it is only a slight degree of danger because a siren went off at that time every morning.")
 document.writeLine("Press enter to continue.")
 if (e.enterKey) {
-document.writeLine("You see the bomb drop but you don't hear it. You are ___ feet away from where it was dropped. Your are also *place*. What should you do?")
-document.writeLine("1. ")
-document.writeLine("2. ")
+document.writeLine("You see a huge flash of light cut across the sky travling from east to west. You are 3500 yards away from where it was dropped. Your are in the middle of the street next to a garden and a house. What should you do?")
+document.writeLine("1. Hide behind a rock in the garden.")
+document.writeLine("2. Hide in the closest house.")
 if (e.oneKey) {
 document.writeLine("You *action*. You were able to survive the first day. Will you leave town or will you stay and find shelter?")
 document.writeLine("1. Leave town")
