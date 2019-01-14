@@ -20,8 +20,63 @@ document.writeLine("You see the bomb drop but you don't hear it. You are ___ fee
 document.writeLine("1. ")
 document.writeLine("2. ")
 if (e.oneKey) {
-
+document.writeLine("You *action*. You were able to survive the first day. Will you leave town or will you stay and find shelter?")
+document.writeLine("1. Leave town")
+document.writeLine("2. Stay and find shelter")
+if (e.oneKey) {
+document.writeLine("You stayed to find shelter and you died from radiation poisoning the next day.")
+}
+if (e.twoKey) {
+document.writeLine("You were able to survive the bombing of Hiroshima. You beat the game.")
+}
 }
 if (e.twoKey) {
 document.writeLine("You were one of the 90,000 - 140,000 people that died in Hiroshima on the day of August 6, 1945.")
 document.writeLine("Refresh the page to start over.")
+}
+
+if (e.twoKey) {
+document.write("backstory")
+document.writeLine("Press enter to continue.")
+if (e.enterKey) {
+document.writeLine("You see the bomb drop but you don't hear it. You are ___ feet away from where it was dropped. Your are also *place*. What should you do?")
+document.writeLine("1. ")
+document.writeLine("2. ")
+if (e.oneKey) {
+document.writeLine("You *action*. You were able to survive the first day. Will you leave town or will you stay and find shelter?")
+document.writeLine("1. Leave town")
+document.writeLine("2. Stay and find shelter")
+if (e.oneKey) {
+document.writeLine("You stayed to find shelter and you died from radiation poisoning the next day.")
+}
+if (e.twoKey) {
+document.writeLine("You were able to survive the bombing of Hiroshima. You beat the game.")
+}
+}
+if (e.twoKey) {
+document.writeLine("You were one of the 90,000 - 140,000 people that died in Hiroshima on the day of August 6, 1945.")
+document.writeLine("Refresh the page to start over.")
+}
+
+if (e.threeKey) {
+document.write("backstory")
+document.writeLine("Press enter to continue.")
+if (e.enterKey) {
+document.writeLine("You see the bomb drop but you don't hear it. You are ___ feet away from where it was dropped. Your are also *place*. What should you do?")
+document.writeLine("1. ")
+document.writeLine("2. ")
+if (e.oneKey) {
+document.writeLine("You *action*. You were able to survive the first day. Will you leave town or will you stay and find shelter?")
+document.writeLine("1. Leave town")
+document.writeLine("2. Stay and find shelter")
+if (e.oneKey) {
+document.writeLine("You stayed to find shelter and you died from radiation poisoning the next day.")
+}
+if (e.twoKey) {
+document.writeLine("You were able to survive the bombing of Hiroshima. You beat the game.")
+}
+}
+if (e.twoKey) {
+document.writeLine("You were one of the 90,000 - 140,000 people that died in Hiroshima on the day of August 6, 1945.")
+document.writeLine("Refresh the page to start over.")
+}
