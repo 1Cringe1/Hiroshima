@@ -7,7 +7,21 @@ document.body.innerHTML = "";
 }
 a()
 document.writeLine("Choose your character!")
-document.writeLine("1. 
+document.writeLine("1. ")
+document.writeLine("2. ")
+document.writeLine("3. ")
 window.onmousemove = function (e) {
 if (!e) e = window.event;
 if (e.oneKey) {
+document.write("backstory")
+document.writeLine("Press enter to continue.")
+if (e.enterKey) {
+document.writeLine("You see the bomb drop but you don't hear it. You are ___ feet away from where it was dropped. Your are also *place*. What should you do?")
+document.writeLine("1. ")
+document.writeLine("2. ")
+if (e.oneKey) {
+
+}
+if (e.twoKey) {
+document.writeLine("You were one of the 90,000 - 140,000 people that died in Hiroshima on the day of August 6, 1945.")
+document.writeLine("Refresh the page to start over.")
