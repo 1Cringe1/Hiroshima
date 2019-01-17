@@ -1,8 +1,10 @@
-<HTML!>
+<!DOCTYPE HTML>
+<head><title>Hiroshima</title>
 <h1><font size="20" color="red" style="verdana">Hiroshima</font></h1>
+</head>
 <p>Choose Your character!<br>
 1. Mr. Tanimoto<br>
-2. Dr. Masakazu Fujii</p1>
+2. Dr. Masakazu Fujii</p>
 <button onclick="a()">Start</button>
 <script>
 
@@ -126,5 +128,7 @@ case "2":
 }
 }
 
+</script>
+</HTML>
 </script>
 </HTML>
