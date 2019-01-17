@@ -1,82 +1,130 @@
 <HTML!>
-<img src="hiroshima.png">
+<h1><font size="20" color="red" style="verdana">Hiroshima</font></h1>
+<p>Choose Your character!<br>
+1. Mr. Tanimoto<br>
+2. Dr. Masakazu Fujii</p1>
+<button onclick="a()">Start</button>
 <script>
-window.setTimeout(a,1000)
+
 function a() {
-document.body.innerHTML = "";
+var text;
+var texta;
+var textb;
+var textc
+var po = prompt("Please Make a selection.", "#");
+  switch(po) {
+	case "1":
+		    text = "You hear a siren that lasted a minute but you think it is only a slight degree of danger because a siren went off at that time every morning.";
+			texta = "You see a huge flash of light cut across the sky travling from east to west. You are 3500 yards away from where it was dropped. Your are in the middle of the street next to a garden and a house. What should you do?";
+			textb = "1. Hide behind a rock in the garden.";
+			textc = "2. Hide in the closest house.";
+			var poa = prompt("Please Make a Selection", "#");
+		switch(poa) {
+		case "1":
+			text = "You *action*. You were able to survive the first day. Will you leave town or will you stay and find shelter?";
+			texta = "1. Leave town";
+			textb = "2. Stay and find shelter";
+			textc = "";
+			var pob = prompt("Please Make a Selection", "#");
+		switch(pob) {
+			case "1":
+				text = "You left town. You survived the bombing of Hiroshima.";
+				texta = "";
+				textb = "";
+				textc = "";
+			break;
+
+			case "2":
+				text = "You stayed to find shelter and you died from radiation poisoning the next day.";
+				texta = "";
+				textb = "";
+				textc = "";
+			break;
+			default:
+	text = "That's not right";
+	texta = "That's not right";
+	textb = "That's not right";
+	textc = "That's not right";
+	break;
 }
-a()
-document.writeLine("Choose your character!")
-document.writeLine("1. Mr. Tanimoto")
-document.writeLine("2. ")
-document.writeLine("3. ")
-window.onmousemove = function (e) {
-if (!e) e = window.event;
-if (e.oneKey) {
-document.writeLine("You hear a siren that lasted a minute but you think it is only a slight degree of danger because a siren went off at that time every morning.")
-document.writeLine("Press enter to continue.")
-if (e.enterKey) {
-document.writeLine("You see a huge flash of light cut across the sky travling from east to west. You are 3500 yards away from where it was dropped. Your are in the middle of the street next to a garden and a house. What should you do?")
-document.writeLine("1. Hide behind a rock in the garden.")
-document.writeLine("2. Hide in the closest house.")
-if (e.oneKey) {
-document.writeLine("You *action*. You were able to survive the first day. Will you leave town or will you stay and find shelter?")
-document.writeLine("1. Leave town")
-document.writeLine("2. Stay and find shelter")
-if (e.oneKey) {
-document.writeLine("You stayed to find shelter and you died from radiation poisoning the next day.")
+		break;
+		case "2":
+			text = "The building collapsed and the heavy roof fell on you.";
+			texta = "You were one of the 90,000 - 140,000 people that died in Hiroshima on the day of August 6, 1945.";
+			textb = "Refresh the page to start over.";
+			textc = "";
+			break;
+			default:
+	text = "That's not right";
+	texta = "That's not right";
+	textb = "That's not right";
+	textc = "That's not right";
+	break;
+			}
+	break;
+	default:
+	text = "That's not right";
+	texta = "That's not right";
+	textb = "That's not right";
+	textc = "That's not right";
+	break;
+	
+case "2":
+		text = "You are a doctor. You use your house as a hospital. Your beds are straw mats but you have all the modern equipment that a doctor would need. You only have a few patients because you expected an attack on the city.";
+		texta = "What should you do?";
+		textb = "1. Check on you patients.";
+		textc = "2. Read the newspaper outside.";
+		var poa = prompt("Please Make a Selection", "#");
+		switch(poa) {
+		case "1":
+			texta = "You are 1550 yards away from the center of the explosion. What should you do?";
+			textb = "1.Run into the house and attempt to evacuate the patients.";
+			textc = "2. Slowly stand up and observe the blast.";
+			var pob = prompt("Please Make a Selection", "#");
+		switch(pob) {
+			case "1":
+				text = " The blast threw you to your knees and the building collapsed on you. You were not able to survive the bombing of Hiroshima.";
+				texta = "";
+				textb = "";
+				textc = "";
+			break;
+			
+			case "2":
+				text = "You slowly stood up and you hear a terrible rippling sound. The blast knocks you into a stream nearby. You get caught between two branches with your head above the water. You watch you hospital fall into the river but you survived the bombing of Hiroshima. You beat the game.”;
+				texta = "";
+				textb = "";
+				textc = "";
+				break;
+				default:
+	text = "That's not right";
+	texta = "That's not right";
+	textb = "That's not right";
+	textc = "That's not right";
+	break;
 }
-if (e.twoKey) {
-document.writeLine("You were able to survive the bombing of Hiroshima. You beat the game.")
+		break;
+		case "2":
+			text = "You go to check on your patients and the you hear a terrible sound and get knock to your feet. The building collapses on you. You did not survive.";
+			texta = "";
+			textb = "";
+			textc = "";
+			break;
+			default:
+	text = "That's not right";
+	texta = "That's not right";
+	textb = "That's not right";
+	textc = "That's not right";
+	break;
+		}
+	break;
+	default:
+	text = "That's not right";
+	texta = "That's not right";
+	textb = "That's not right";
+	textc = "That's not right";
+	break;
 }
-}
-if (e.twoKey) {
-document.writeLine("You were one of the 90,000 - 140,000 people that died in Hiroshima on the day of August 6, 1945.")
-document.writeLine("Refresh the page to start over.")
 }
 
-if (e.twoKey) {
-document.write("backstory")
-document.writeLine("Press enter to continue.")
-if (e.enterKey) {
-document.writeLine("You see the bomb drop but you don't hear it. You are ___ feet away from where it was dropped. Your are also *place*. What should you do?")
-document.writeLine("1. ")
-document.writeLine("2. ")
-if (e.oneKey) {
-document.writeLine("You *action*. You were able to survive the first day. Will you leave town or will you stay and find shelter?")
-document.writeLine("1. Leave town")
-document.writeLine("2. Stay and find shelter")
-if (e.oneKey) {
-document.writeLine("You stayed to find shelter and you died from radiation poisoning the next day.")
-}
-if (e.twoKey) {
-document.writeLine("You were able to survive the bombing of Hiroshima. You beat the game.")
-}
-}
-if (e.twoKey) {
-document.writeLine("You were one of the 90,000 - 140,000 people that died in Hiroshima on the day of August 6, 1945.")
-document.writeLine("Refresh the page to start over.")
-}
-
-if (e.threeKey) {
-document.write("backstory")
-document.writeLine("Press enter to continue.")
-if (e.enterKey) {
-document.writeLine("You see the bomb drop but you don't hear it. You are ___ feet away from where it was dropped. Your are also *place*. What should you do?")
-document.writeLine("1. ")
-document.writeLine("2. ")
-if (e.oneKey) {
-document.writeLine("You *action*. You were able to survive the first day. Will you leave town or will you stay and find shelter?")
-document.writeLine("1. Leave town")
-document.writeLine("2. Stay and find shelter")
-if (e.oneKey) {
-document.writeLine("You stayed to find shelter and you died from radiation poisoning the next day.")
-}
-if (e.twoKey) {
-document.writeLine("You were able to survive the bombing of Hiroshima. You beat the game.")
-}
-}
-if (e.twoKey) {
-document.writeLine("You were one of the 90,000 - 140,000 people that died in Hiroshima on the day of August 6, 1945.")
-document.writeLine("Refresh the page to start over.")
-}
+</script>
+</HTML>
